@@ -37,6 +37,8 @@
     <script src="/public/assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
     <script>
+
+
         $('form').on('submit',function(){
             var _this = $(this);
             $.ajax({
@@ -44,8 +46,8 @@
                 type: 'post',
                 data: _this.serialize(),
                 success:function(info){
-                    if(info.err){
-                        return alert(info.msg);
+                    if(info.error){
+                        return alert(info.message);
                     }
                     location.href = '/';
                 }
