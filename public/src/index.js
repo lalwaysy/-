@@ -1,3 +1,4 @@
-define(['jquery',.'/logout'],function($){
+define(['jquery','./logout'],function($){
    
+    
 })
